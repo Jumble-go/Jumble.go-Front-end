@@ -1,14 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useNavigate } from 'react-router-dom'
 
-function NavBar() {
-  
-  const navigate = useNavigate()
+function LoginNavbar() {
 
   return (
-    <Navbar className="Nav-bar" collapseOnSelect expand="lg"  variant="dark">
+    <Navbar className="Nav-one" collapseOnSelect expand="lg"  variant="dark">
       <Container className = "Nav-bar-container">
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -30,4 +27,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default LoginNavbar;
