@@ -10,13 +10,13 @@ function NavBar() {
   return (
     <Navbar className="Nav-bar" collapseOnSelect expand="lg"  variant="dark">
       <Container className = "Nav-bar-container">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">Jumble</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Nav.Link className='NAV-1' href="Home">Home</Nav.Link>
+            <Nav.Link className='NAV-1' href="/">Home</Nav.Link>
           </Nav>
           <Nav>      
             <Nav.Link className='NAV-2' href="+Signup" > Sign up </Nav.Link>     

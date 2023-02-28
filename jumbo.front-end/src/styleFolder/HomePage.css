@@ -1,0 +1,24 @@
+.Test-Container {
+    display: flex;
+    flex-direction: row;;
+    /* background-color: aqua; */
+    
+}
+
+.child1 {
+    width: 50%;
+    height: 100vh;
+    /* background-color: green; */
+    text-align: right;
+    color: white;
+}
+
+.child2 {
+    width: 50%;
+  
+    height: 100vh;
+}
+
+.Card{
+    margin-bottom: 5%;
+}

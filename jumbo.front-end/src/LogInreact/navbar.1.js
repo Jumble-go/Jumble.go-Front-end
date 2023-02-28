@@ -13,7 +13,7 @@ function LoginNavbar() {
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Nav.Link className='NAV-1' href="Home">Home</Nav.Link>
+            <Nav.Link className='NAV-1' href="/">Home</Nav.Link>
           </Nav>
           <Nav>      
             <Nav.Link className='NAV-2' href="+Signup" > Sign up </Nav.Link>     
