@@ -3,16 +3,19 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
+import {CloudinaryContext} from "cloudinary-react"
 import ContextProvider from "./Context/ContextProvider"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <CloudinaryContext cloudName="dej7en15p">
   <ContextProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
   </ContextProvider>
-    
+  </CloudinaryContext>
   
 );
 

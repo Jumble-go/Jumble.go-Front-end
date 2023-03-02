@@ -23,10 +23,13 @@ import InventoryIcon from '@mui/icons-material/Inventory';
 import LoyaltyIcon from '@mui/icons-material/Loyalty';
 import ForumIcon from '@mui/icons-material/Forum';
 import MediaCard from './HomeCard';
+import FormFilePost from './Homepostform';
 import '../styleFolder/HomePage.css'
 import { useNavigate } from 'react-router-dom'
 import { useContext, useEffect, useState } from "react"
 import Context from '../Context/Contex';
+import BasicTabs from './HomeToggle';
+
 // import {MuiTheme}
 
 
@@ -228,19 +231,21 @@ export default function TestDrawer() {
             <Main open={open}>
                 <DrawerHeader />
                 <Typography >
-                    <div className='Test-Container'>
+                    <BasicTabs />
+                    <FormFilePost/>
+                   {  active && <div className='Test-Container'>
 
                         <div class="child1">
                             <center>
-                                {active && posts.filter((x, index) => index % 2 !== 0).map(post => { return <MediaCard id={post.id} user={post.user_id} userName={post.username_Poster} image={post.image} des={post.description} price={post.price} date={post.datetime} tittle={post.tittle} /> })}
+                                {posts.filter((x, index) => index % 2 !== 0).map(post => { return <MediaCard id={post.id} user={post.user_id} userName={post.username_Poster} image={post.image} des={post.description} price={post.price} date={post.datetime} tittle={post.tittle} /> })}
                             </center>
                         </div>
                         <div class="child2">
-                            {active && posts.filter((x, index) => index % 2 === 0).map(post => { return <MediaCard id={post.id} user={post.user_id} image={post.image} userName={post.username_Poster} des={post.description} price={post.price} date={post.datetime} tittle={post.tittle} /> })}
+                            {posts.filter((x, index) => index % 2 === 0).map(post => { return <MediaCard id={post.id} user={post.user_id} image={post.image} userName={post.username_Poster} des={post.description} price={post.price} date={post.datetime} tittle={post.tittle} /> })}
                         </div>
 
 
-                    </div>
+                    </div> }
                 </Typography>
 
             </Main>

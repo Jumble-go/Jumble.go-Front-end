@@ -11,6 +11,7 @@ function ContextProvider({ children }) {
     const [username, setUsername] = useState('')
     const [signPassword, setSignpassword] = useState('')
     const [signUsername, setSignusername] = useState('')
+    const [postToggle, setPostToggle] = useState(false)
     const [active, setActive] = useState(false)
     
 
@@ -34,7 +35,9 @@ function ContextProvider({ children }) {
         signUsername,
         setSignusername, 
         active, 
-        setActive
+        setActive,
+        postToggle, 
+        setPostToggle
 
     }
 
