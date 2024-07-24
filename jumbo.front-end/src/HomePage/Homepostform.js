@@ -73,7 +73,7 @@ function FormFilePost() {
                                 </Col>
                             </Form.Group>
                             <Form.Group controlId="formFile" className="mb-3" >
-                                <Form.Label>Default file input example</Form.Label>
+                                <Form.Label>Upload file </Form.Label>
                                 <Form.Control type="file" style={{ width: "45%" }} onChange={(e)=>{setFile(e.target.files[0])}} />
                             </Form.Group>
                             <div>

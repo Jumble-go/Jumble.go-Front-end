@@ -29,27 +29,33 @@ function BasicSignup() {
 
   function handleSignsubmit(e) {
     e.preventDefault()
-    console.log(email, signPassword, signUsername)
-    fetch('http://localhost:8000/add_user', {
-      method: "POST",
-      body: JSON.stringify({
-        email,
-        username: signUsername,
-        password: signPassword
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8"
-      }
-    }).then(response=> response.json()).then(data=>{
-      console.log(data)
-      setUser(data)
+    // console.log(email, signPassword, signUsername)
+    // fetch('http://localhost:8000/add_user', {
+    //   method: "POST",
+    //   body: JSON.stringify({
+    //     email,
+    //     username: signUsername,
+    //     password: signPassword
+    //   }),
+    //   headers: {
+    //     "Content-type": "application/json; charset=UTF-8"
+    //   }
+    // }).then(response=> response.json()).then(data=>{
+    //   console.log(data)
+    //   setUser(data)
+    //   setEmail('')
+    //   setSignusername("")
+    //   setSignpassword("")
+    //   navigate('/Home')
+    //   setActive(true)
+    // })
+    // console.log(data)
+    //   setUser(data)
       setEmail('')
       setSignusername("")
       setSignpassword("")
       navigate('/Home')
       setActive(true)
-    })
-
   }
 
   return (
